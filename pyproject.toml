@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "datadots"
+version = "0.1.0"
+description = ""
+authors = ["Willian Moreira"]
+license = "GBU 3.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+mkdocs-material = "^9.5.0"
+mkdocs-minify-plugin = "^0.7.2"
+mkdocs-git-revision-date-localized-plugin = "^1.2.2"
+mkdocs-git-revision-date-plugin = "^0.3.2"
+mkdocs-awesome-pages-plugin = "^2.9.2"
+mkdocs-redirects = "^1.2.1"
+mkdocs-macros-plugin = "^1.0.5"
+mkdocstrings = "^0.24.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

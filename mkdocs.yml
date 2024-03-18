@@ -1,0 +1,39 @@
+site_name: DataDots
+site_url: https://datadots.com.br
+site_description: An awesome project 
+site_author: Willian Moreira
+
+# Choose a theme
+theme:
+  name: material
+  logo: images/logo.png
+  favicon: images/favicon.ico
+
+# Define the navigation structure
+nav:
+  - Home: index.md
+
+# Plugins (optional)
+plugins:
+  - search
+  - mkdocstrings:
+      watch:
+        - src/
+
+# Extra options
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/yourusername/yourproject
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/yourusername
+
+# Google Analytics (optional)
+# google_analytics:
+#   - UA-XXXXX-X
+#   - auto
+
+# Repository
+repo_name: yourusername/yourproject
+repo_url: https://github.com/yourusername/yourproject
+edit_uri: blob/master/docs/
