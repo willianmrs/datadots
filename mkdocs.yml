@@ -9,24 +9,29 @@ theme:
   logo: images/logo.png
   favicon: images/favicon.ico
 
+markdown_extensions:
+  - abbr
+  - attr_list
+  - pymdownx.snippets
+
+
 # Define the navigation structure
 nav:
   - Home: index.md
+  - Spark: spark/intro-spark.md
 
 # Plugins (optional)
 plugins:
   - search
-  - mkdocstrings:
-      watch:
-        - src/
+  - mkdocstrings
 
 # Extra options
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/yourusername/yourproject
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/yourusername
+      link: https://github.com/willianmrs/datadots
+    # - icon: fontawesome/brands/twitter
+    #   link: https://twitter.com/yourusername
 
 # Google Analytics (optional)
 # google_analytics:
@@ -34,6 +39,6 @@ extra:
 #   - auto
 
 # Repository
-repo_name: yourusername/yourproject
-repo_url: https://github.com/yourusername/yourproject
-edit_uri: blob/master/docs/
+repo_name: willianmrs/datadots
+repo_url: https://github.com/willianmrs/datadots
+# edit_uri: blob/master/docs/
