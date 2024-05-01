@@ -7,7 +7,7 @@ license = "GBU 3.0"
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.12"
 mkdocs-material = "^9.5.0"
 mkdocs-minify-plugin = "^0.7.2"
 mkdocs-git-revision-date-localized-plugin = "^1.2.2"
