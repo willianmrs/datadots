@@ -1,0 +1,38 @@
+name: Deploy MkDocs to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Set this to the branch name from which you want to deploy
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'  # Match this to the Python version specified in your pyproject.toml
+
+    - name: Install Poetry
+      run: |
+        curl -sSL https://install.python-poetry.org | python3 -
+
+    - name: Configure Poetry
+      run: |
+        echo "$HOME/.local/bin" >> $GITHUB_PATH  # Ensure poetry is in PATH
+
+    - name: Install dependencies
+      run: |
+        poetry config virtualenvs.create false  # This prevents creating an additional virtualenv
+        poetry install --no-interaction --no-ansi
+
+    - name: Build the MkDocs site
+      run: poetry run mkdocs build --verbose
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./site
