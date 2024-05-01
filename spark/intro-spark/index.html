@@ -12,19 +12,23 @@
         <meta name="author" content="Willian Moreira">
       
       
+        <link rel="canonical" href="https://datadots.com.br/spark/intro-spark/">
+      
+      
+        <link rel="prev" href="../..">
       
       
       
-      <link rel="icon" href="/images/favicon.ico">
+      <link rel="icon" href="../../images/favicon.ico">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.13">
     
     
       
-        <title>DataDots</title>
+        <title>Spark - DataDots</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.7e359304.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e359304.min.css">
       
       
 
@@ -43,9 +47,9 @@
       
     
     
-      <link rel="stylesheet" href="/assets/_mkdocstrings.css">
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -63,6 +67,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#introduction-to-apache-spark" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -75,9 +84,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="DataDots" class="md-header__button md-logo" aria-label="DataDots" data-md-component="logo">
+    <a href="../.." title="DataDots" class="md-header__button md-logo" aria-label="DataDots" data-md-component="logo">
       
-  <img src="/images/logo.png" alt="logo">
+  <img src="../../images/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -94,7 +103,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Spark
             
           </span>
         </div>
@@ -181,9 +190,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="DataDots" class="md-nav__button md-logo" aria-label="DataDots" data-md-component="logo">
+    <a href="../.." title="DataDots" class="md-nav__button md-logo" aria-label="DataDots" data-md-component="logo">
       
-  <img src="/images/logo.png" alt="logo">
+  <img src="../../images/logo.png" alt="logo">
 
     </a>
     DataDots
@@ -210,7 +219,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -227,10 +236,30 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/spark/intro-spark/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Spark
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -239,6 +268,62 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#key-features-of-apache-spark" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Features of Apache Spark
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#components-of-apache-spark" class="md-nav__link">
+    <span class="md-ellipsis">
+      Components of Apache Spark
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use Cases
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting Started
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -260,6 +345,52 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#key-features-of-apache-spark" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Features of Apache Spark
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#components-of-apache-spark" class="md-nav__link">
+    <span class="md-ellipsis">
+      Components of Apache Spark
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use Cases
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting Started
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -271,8 +402,49 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+  
+  
+
+
+<h1 id="introduction-to-apache-spark">Introduction to Apache Spark</h1>
+<p>Apache Spark is an open-source, distributed computing system that provides an interface for programming entire clusters with implicit data parallelism and fault tolerance. Originally developed at UC Berkeley's AMPLab, Spark has rapidly become one of the most popular big data technologies in use today.</p>
+<h2 id="key-features-of-apache-spark">Key Features of Apache Spark</h2>
+<ul>
+<li><strong>Speed</strong>: Spark enables applications in Hadoop clusters to run up to 100 times faster in memory and 10 times faster even when running on disk.</li>
+<li><strong>Ease of Use</strong>: It offers over 80 high-level operators that make it easy to build parallel apps, and you can use it interactively from the Scala, Python, R, and SQL shells.</li>
+<li><strong>Modular</strong>: Spark includes libraries for diverse tasks ranging from SQL to streaming and machine learning, making it a versatile tool for handling a wide array of data processing requirements.</li>
+</ul>
+<h2 id="components-of-apache-spark">Components of Apache Spark</h2>
+<ol>
+<li><strong>Spark Core</strong>: The foundation of the system that provides distributed task dispatching, scheduling, and basic I/O functionalities.</li>
+<li><strong>Spark SQL</strong>: Facilitates the processing of structured data and the capability to query the data using SQL, as well as Hive Query Language.</li>
+<li><strong>Spark Streaming</strong>: Enables processing of real-time streaming data.</li>
+<li><strong>MLlib</strong>: Spark’s scalable machine learning library.</li>
+<li><strong>GraphX</strong>: Supports graph processing to handle graph databases and perform graph-parallel computation.</li>
+</ol>
+<h2 id="use-cases">Use Cases</h2>
+<p>Apache Spark is employed across various industries for numerous applications. It's particularly favored for:
+- Real-time data processing and analytics.
+- Machine learning model development.
+- Data transformation and aggregation tasks.</p>
+<h2 id="getting-started">Getting Started</h2>
+<p>To get started with Apache Spark, you can download the latest version from the <a href="https://spark.apache.org/downloads.html">Apache Spark official website</a>. For comprehensive guidance on installation and setup, the website and its documentation are invaluable resources.</p>
+<p>Feel free to explore the subsequent sections to dive deeper into Spark’s capabilities and learn through examples and detailed explanations.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -321,10 +493,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "/", "features": [], "search": "/assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="/assets/javascripts/bundle.c8d2eff1.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c8d2eff1.min.js"></script>
       
     
   </body>
