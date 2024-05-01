@@ -1,4 +1,4 @@
-# Welcome to DataDots Tech Hub2
+# Welcome to DataDots Tech Hub
 Hello, and welcome to my corner of the internet! I'm Willian Moreira, a passionate technologist with a keen interest in the forefront of digital innovation. This website is my digital garden, a place where I cultivate and share comprehensive tutorials, insightful thoughts, and explorations in the realms of distributed computing, artificial intelligence (including machine learning), and large language models (LLMs).
 
 My journey through technology has always been driven by a deep curiosity and the relentless pursuit of knowledge. Here, I aim to demystify complex concepts, share practical insights, and discuss the latest trends that are shaping our digital future. Whether you're a student, professional, or enthusiast eager to learn about Spark and distributed computing, AI, or the intricacies of machine learning and LLMs, you'll find resources here that cater to a wide range of interests and skill levels.
